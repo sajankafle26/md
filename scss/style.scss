@@ -1,0 +1,228 @@
+$primary: #F46A06;
+$b: #000000;
+$wite: #fff;
+$grey: #555555;
+
+@mixin flex 
+{
+    display: flex; justify-content: space-between; align-items: center;
+}
+@mixin res($min,$max) {
+    @media (min-width: $min) and (max-width: $max) {
+        @content;
+    }
+}
+@import url('https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&family=Roboto:wght@100;400;500;700;900&display=swap');
+*
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body 
+{
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.7;
+}
+h1,h2,h3,h4,h5,h6 
+{
+    font-family: 'Quicksand', sans-serif;
+}
+.con
+{
+    max-width: 1170px;
+    margin: auto;
+    @include res(0px,992px)
+    {
+        padding: 10px 20px;
+    }
+}
+.btn 
+{
+    background: $primary;
+    color: $wite;
+    padding: 10px 20px;
+    border: none;
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 19px;
+}
+header 
+{
+    padding: 20px 0;
+    .con{
+        @include flex;
+    }
+    .logo 
+    {
+        flex-grow: 1;
+        h1 
+        {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 50px;
+        span 
+        {
+             color: $primary;
+        }
+        }
+    }
+    nav 
+    {
+       margin-right: 100px;
+       @include res(0px,992px)
+       {
+        margin: 0;
+       }
+       span 
+       {
+        font-size: 33px;
+        display: none;
+        @include res(0px,992px)
+        {
+            display: block;
+        }
+       }
+        ul 
+        {
+            @include res(0px,992px)
+        {
+            display: none;
+        }
+            li 
+            {
+                display: inline;
+                a 
+                {
+                    font-weight: 500;
+                    font-size: 15px;
+                    line-height: 18px;
+                    padding: 15px;
+                    text-decoration: none;
+                    color: $primary;
+                }
+            }
+        }
+    }
+    .btn 
+    {
+        @include res(0px,992px)
+        {
+            display: none;
+        }
+    }
+}
+
+.about
+{
+    .con
+    {
+        @include flex;
+        @include res(0px, 992px)
+        {
+            flex-direction: column;
+        }
+       
+    }
+    &__left 
+    {
+        @include res(0px, 992px )
+        {
+            order: 2;
+        }
+        flex-basis: 500px;
+        h1 
+        {
+            font-weight: 700;
+            font-size: 48px;
+            line-height: 50px;
+        }
+        p 
+        {
+            padding: 20px 0;
+        }
+    }
+    &__right 
+    {
+        @include res(0px, 992px )
+        {
+            order: 1;
+        }
+    }
+}
+.counter
+{
+    background: $primary;
+    padding: 30px 0;
+    .con 
+    {
+        @include flex;
+        @include res(0px,992px )
+        {
+            flex-direction: column;
+            gap: 40px;
+        }
+        color: $wite;
+        h2 
+        {
+            font-weight: 700;
+            font-size: 40px;
+            line-height: 50px;
+        }
+    }
+}
+
+.quote
+{
+    background: url(../img/unsplash_qYreP9QOdrk.png);
+    background-size: cover;
+    padding: 4% 15%;
+    @include res(0px,992px)
+    {
+        padding: 20px;
+    }
+    color: $wite;
+    text-align: center;
+    h2 
+    {
+        font-weight: 700;
+        font-size: 36px;
+        line-height: 45px;
+        color: $primary;
+    }
+    p 
+    {
+        padding: 30px 200px 0 200px;
+        @include res(0px,992px)
+        {
+            padding: 20px;
+        }
+    }
+}
+.food
+{
+    padding: 50px 0;
+    .con1
+    {
+        max-width: 60%;
+        margin: auto;
+        text-align: center;
+        h2
+        {
+            font-weight: 700;
+            font-size: 36px;
+            padding: 20px 0;
+            line-height: 50px;
+        }
+    }
+    .flex
+    {
+        @include flex;
+        padding-top: 40px;
+        @include res(0px,992px)
+        {
+            flex-direction: column;
+            gap: 20px;
+        }
+    }
+}

@@ -1,0 +1,242 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600&family=Roboto:wght@100;400;500;700;900&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-family: "Roboto", sans-serif;
+  line-height: 1.7;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Quicksand", sans-serif;
+}
+
+.con {
+  max-width: 1170px;
+  margin: auto;
+}
+@media (min-width: 0px) and (max-width: 992px) {
+  .con {
+    padding: 10px 20px;
+  }
+}
+
+.btn {
+  background: #F46A06;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 19px;
+}
+
+header {
+  padding: 20px 0;
+}
+header .con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+header .logo {
+  -webkit-box-flex: 1;
+      -ms-flex-positive: 1;
+          flex-grow: 1;
+}
+header .logo h1 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 50px;
+}
+header .logo h1 span {
+  color: #F46A06;
+}
+header nav {
+  margin-right: 100px;
+}
+@media (min-width: 0px) and (max-width: 992px) {
+  header nav {
+    margin: 0;
+  }
+}
+header nav span {
+  font-size: 33px;
+  display: none;
+}
+@media (min-width: 0px) and (max-width: 992px) {
+  header nav span {
+    display: block;
+  }
+}
+@media (min-width: 0px) and (max-width: 992px) {
+  header nav ul {
+    display: none;
+  }
+}
+header nav ul li {
+  display: inline;
+}
+header nav ul li a {
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 18px;
+  padding: 15px;
+  text-decoration: none;
+  color: #F46A06;
+}
+@media (min-width: 0px) and (max-width: 992px) {
+  header .btn {
+    display: none;
+  }
+}
+
+.about .con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+@media (min-width: 0px) and (max-width: 992px) {
+  .about .con {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+}
+.about__left {
+  -ms-flex-preferred-size: 500px;
+      flex-basis: 500px;
+}
+@media (min-width: 0px) and (max-width: 992px) {
+  .about__left {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+  }
+}
+.about__left h1 {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 50px;
+}
+.about__left p {
+  padding: 20px 0;
+}
+@media (min-width: 0px) and (max-width: 992px) {
+  .about__right {
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+  }
+}
+
+.counter {
+  background: #F46A06;
+  padding: 30px 0;
+}
+.counter .con {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #fff;
+}
+@media (min-width: 0px) and (max-width: 992px) {
+  .counter .con {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 40px;
+  }
+}
+.counter .con h2 {
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+}
+
+.quote {
+  background: url(../img/unsplash_qYreP9QOdrk.png);
+  background-size: cover;
+  padding: 4% 15%;
+  color: #fff;
+  text-align: center;
+}
+@media (min-width: 0px) and (max-width: 992px) {
+  .quote {
+    padding: 20px;
+  }
+}
+.quote h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 45px;
+  color: #F46A06;
+}
+.quote p {
+  padding: 30px 200px 0 200px;
+}
+@media (min-width: 0px) and (max-width: 992px) {
+  .quote p {
+    padding: 20px;
+  }
+}
+
+.food {
+  padding: 50px 0;
+}
+.food .con1 {
+  max-width: 60%;
+  margin: auto;
+  text-align: center;
+}
+.food .con1 h2 {
+  font-weight: 700;
+  font-size: 36px;
+  padding: 20px 0;
+  line-height: 50px;
+}
+.food .flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding-top: 40px;
+}
+@media (min-width: 0px) and (max-width: 992px) {
+  .food .flex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    gap: 20px;
+  }
+}/*# sourceMappingURL=style.css.map */
